@@ -17,8 +17,17 @@ public:
 private:
 	void beginDraw();
 	void endDraw();
+	void drawObjects();
 	sf::RenderWindow* window;
 
-	sf::RectangleShape rect;
+	sf::RectangleShape s_rect;
+	sf::RectangleShape m_rect;
+	sf::RectangleShape l_rect;
+
+	sf::RectangleShape bottom_right;
+
 	sf::CircleShape circle;
+
+	sf::Font font;
+	sf::Text text;
 };
